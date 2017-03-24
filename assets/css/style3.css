@@ -1,6 +1,6 @@
 body,html{
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
   
 .banner {
@@ -80,11 +80,11 @@ nav.navbar-default{
   display: inline;
 }  
     
-  	
-	/*.abc{
-		padding-left: 0px;
-		padding-right: 0px;
-	}*/
+    
+  /*.abc{
+    padding-left: 0px;
+    padding-right: 0px;
+  }*/
 .abc{
   padding:0px;
   margin: 0px;
@@ -105,7 +105,7 @@ nav.navbar-default{
 }
 
 div.collapse ul.nav li a{
-	font-weight: bold;	
+  font-weight: bold;  
 }
 
 hr { 
@@ -233,16 +233,16 @@ hr {
 }
     
 #left3{
-	display: flex;
+  display: flex;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
-	flex-direction: column;
+  flex-direction: column;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-	width:38%;
-	position: relative;
+  width:38%;
+  position: relative;
 }
 
 #right3{    
@@ -283,31 +283,31 @@ blockquote {
   border: none;
 }
 .carousel-indicators li {
-	background-color: transparent;
-	border-color: #a9b0b6;
+  background-color: transparent;
+  border-color: #a9b0b6;
 }
 .carousel-indicators .active {
-	background-color: #a6adb3;
-	width: 10px;
+  background-color: #a6adb3;
+  width: 10px;
   height: 10px;
   margin: 1px;
 }
 .border{
-	border:2px solid #000;
+  border:2px solid #000;
 }
 .carousel-indicators {
-	bottom: 0px;
-	padding-bottom: 35px;
+  bottom: 0px;
+  padding-bottom: 35px;
 }
 p{
-	padding: 0px ;
-	padding-left: 10%;
-	padding-right : 10%;
-	padding-bottom: 3%;
+  padding: 0px ;
+  padding-left: 10%;
+  padding-right : 10%;
+  padding-bottom: 3%;
 }
 #myCarousel{
-	padding-top:100px;
-	padding-bottom: 80px;
+  padding-top:100px;
+  padding-bottom: 80px;
 }
 
 #btn1{
@@ -661,6 +661,7 @@ p{
 }
 
 
+
 @media only screen and (max-width:480px){
   .banner{
     height: 800px;
@@ -668,15 +669,32 @@ p{
 }
 
 @media only screen and (max-width:450px){
+  .grid div{
+    width:100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black; 
+  }
   .grid div:nth-child(5){
-    background-image: url('images/page5_6_6_6.jpg');
+    background-image: url('../../assets/images/page5_6_6_6.jpg');
+  }
+
+  .grid div:nth-child(6){
+    background-image: url('../../assets/images/page5_3_3_3.jpg');
+  }
+}
+
+/*@media only screen and (max-width:450px){
+  .grid div:nth-child(5){
+    background-image: url('../../assets/images/page5_6_6_6.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     height: 225px;
   }
 
   .grid div:nth-child(6){
-    background-image: url('images/page5_3_3_3.jpg');
+    background-image: url('../../assets/images/page5_3_3_3.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     height: 225px;
@@ -685,13 +703,12 @@ p{
   .grid-item--width3 { width: 225px; }
   .grid-item--height2 { height: 450px; }
 }
-
+*/
 
 @media only screen and (max-width:320px){
   .banner{
     height: 480px;
   }
 }
-
 
 
