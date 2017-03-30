@@ -4,96 +4,37 @@
   <title>YEBO Bicycles</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+  <script src="assets/bootstrap/dist/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/style3.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
-  <!-- <link rel="stylesheet" href="aos/dist/aos.css" />
-  <script src="aos/dist/aos.js"></script> -->
-<!-- <style type="text/css">
-
-  #page6 div div:nth-child(3)>img{
-    -webkit-animation-name: spinner;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-duration: 6s;
-
-    animation-name: spinner;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-duration: 6s;
-
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-  #page6 div div:nth-child(3)>img:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-
-  #page6 div div:nth-child(3)>img{
-    -webkit-perspective: 500px;
-    -moz-perspective: 500px;
-    -ms-perspective: 500px;
-    perspective: 500px;
-
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-   /* WebKit and Opera browsers */
-  @-webkit-keyframes spinner {
-    from { -webkit-transform: rotateZ(0deg); }
-    to   { -webkit-transform: rotateZ(-360deg); }
-  }
-
-  /* all other browsers */
-  @keyframes spinner {
-    from {
-      -moz-transform: rotateY(0deg);
-      -ms-transform: rotateY(0deg);
-      transform: rotateY(0deg);
-    }
-    to {
-      -moz-transform: rotateY(-360deg);
-      -ms-transform: rotateY(-360deg);
-      transform: rotateY(-360deg);
-    }
-  }
-
-</style> -->
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="assets/css/style12.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 </head>
-<body>
 
-<!-- <script>
-    AOS.init({
-      offset: 50,
-      duration: 3000
-    });
-</script> -->
+
+
+<body >
+
 <script src="assets/scripts/js/wow.min.js"></script>
               <script>
               new WOW().init();
               </script>
 <div class="banner">
-  <div class="container">
-    <nav class="navbar navbar-default  wow flipInX" data-wow-duration="2s" >
+    <nav class="navbar navbar-default" >
       <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png">
+             <span>Yebo Bicycles</span>
+          </a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -102,10 +43,10 @@
       </div>
       <div class="collapse navbar-collapse bold-text" id="myNavbar">
         <ul class="nav navbar-nav" >
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">WORK</a></li>
-          <li><img class="img-responsive" src="assets/images/logo.png"></li>
-          <li><a href="#">SHOP</a></li>
+          <li><a href="#cont_page2">ABOUT US</a></li>
+          <li><a href="#left2">WORK</a></li>
+          <li><a href="#"><img class="img-responsive" src="assets/images/logo.png"></a></li>
+          <li><a href="#container">SHOP</a></li>
           <li><a href="#contact">CONTACT</a></li>   
         </ul> 
       </div>
@@ -114,7 +55,7 @@
 </div>
 
 <!--page 2-->
-<div id="cont_page2">
+<div id="cont_page2" class="vivek">
   <div class="container">
     <div class="row">
       <div class="col-md-12 about-section">
@@ -125,50 +66,49 @@
     </div>
   </div>
 </div>
-<div  class="outer">
-  <div id="left2" >
-    <img id="page2_1" class="img-responsive image-hw wow rotateIn" data-wow-duration="1.5s" data-wow-offset="1"  src="assets/images/page2_1.jpg" />
-    <img id="logo1" class="img-responsive" src="assets/images/logo1.png" />
+<div id="section2" class="clearfix vivek">
+  <div id="left2" class="wow fadeInDown" data-wow-duration="2s">
+    <img id="logo2_1" class="img-responsive" src="assets/images/logo1.png" />
   </div>
   <div id="right2">
-    <div class="container-fluid text-center cont234-padding">
+    <div class="container-fluid text-center">
       <img class="img-responsive" src="assets/images/icon3.png" />
       <h2 class="title">VINTAGE OLIVIA</h2>
       <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
       <hr>
       </p>
     </div>
-    <img id="page2_2" class="img-responsive image-w  wow bounce" data-wow-duration="1.5s" data-wow-offset="1"  src="assets/images/page2_2.jpg"  />      
+    <div id="right2img" class="wow slideInRight" data-wow-duration="1s"></div>   
   </div>
 </div>
 <!---->
-
+<!-- changes -->
+<div class="vivek"></div>
 <!--page 3-->
-<div class="outer">
+<div class="section3 clearfix vivek">
   <div id="left3">
-    <div class="container-fluid text-center cont234-padding">
+    <div class="container-fluid text-center">
+      <!-- <img src="assets/images/container.png" style="width: 100%;height: 75%;position: absolute;top: 0;left: 0;z-index: -1;"> -->
       <img class="img-responsive" src="assets/images/icon2.png" />
-        <h2 class="title">LA BORIOSA</h2>
-        <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
-        <hr>
+      <h2 class="title">LA BORIOSA</h2>
+      <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+      <hr>
     </div>
-    <img class="img-responsive image-w  wow wobble  " data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/page3_1.jpg">
+    <div id="left3img" class="wow slideInLeft" data-wow-duration="1s"></div>
   </div>
-  <div id="right3">
-    <img class="img-responsive image-hw  wow rotateIn" data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/page3_2.jpg">
-    <img class="img-responsive  wow fadeIn" data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/logo2.png">
+  <div id="right3" class="wow fadeInDown" data-wow-duration="2s">
+  <!-- ch -->
+    <img id="icon3_1" class="img-responsive  wow fadeIn" data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/logo2.png">
   </div>
 </div>
 <!---->
-
 <!--page 4-->
-<div class="outer">
-  <div id="left4" class="inner1">
-    <img class="img-responsive image-hw wow bounceInDown" data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/page4_1.jpg">
-    <img class="img-responsive" src="assets/images/logo3_1.png">
+<div id="section4" class="clearfix">
+  <div id="left4" class="wow slideInDown" data-wow-duration="1.5s">
+    <img id="logo4_1" class="img-responsive" src="assets/images/logo3_1.png">
   </div>
-  <div id="mid4" class="inner2">
-      <div class="container-fluid text-center cont234-padding">
+  <div id="mid4">
+      <div class="container-fluid text-center">
           <img class="img-responsive" src="assets/images/icon3_1.png">
           <h2 class="title">RETRO BIKE - M. HULOT</h2>
           <p class="p_body">
@@ -176,27 +116,15 @@
           </p>
           <hr>
       </div>
-      <img class="img-responsive image-w wow  rollIn" data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/page4_2.jpg">
+      <div id="mid4img" class="wow bounceIn" data-wow-duration="1.5s"></div>
   </div>
-  <!-- <div class="inner2"  style="display: flex;flex-direction: column;position: relative;width: 34%;">
-    <div class="container-fluid text-center cont-padding">
-      <img class="img-responsive" src="images/icon3_1.png" style="display: inline;margin-bottom: 3%;">
-      <p class="title">RETRO BIKE - M. HULOT</p>
-      <p class="p_body">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
-      </p>
-    </div>
-    <img class="img-responsive" src="images/page4_2.jpg" style="position: absolute;bottom: 0;">
-  </div> -->
-  <div id="right4" class="inner3">
-    <img class="img-responsive image-hw  wow bounceInDown" data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/page4_3.jpg">
-  </div>
+  <div id="right4"  class="wow slideInDown" data-wow-duration="1.5s"></div>
 </div>
 <!---->
 
 <!--page 5-->
 <div>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide clearfix" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -247,15 +175,48 @@
 <!---->
 
 <!--page 6-->
-<div class="grid"  data-packery='{ "itemSelector": ".grid-item", "columnWidth": 225 }'>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--width3"></div>
-  <div class="grid-item  grid-item--width3"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
+<div id="container" class="vivek">
+  <div class="grid-sizer"></div>
+  <div class="grid-item">
+      <img src="assets/images/cycle1_1.jpg" class="image">
+      <a class="overlay" href="#">
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle13_1.jpg" class="image">
+      <a class="overlay" href="#">
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle3_1.jpg" class="image">
+      <a class="overlay" href="#">
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle12_1.jpg" class="image">
+      <a class="overlay" href="#">
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle5_1.jpg" class="image">
+      <a class="overlay" href="#">
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle15_1.jpg" class="image">
+      <a class="overlay" href="#">
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle5_1.jpg" class="image">
+      <a class="overlay" href="#">
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle6_1.jpg" class="image">
+      <a class="overlay" href="#">
+      </a>
+  </div>
 </div>
 
 <div id="button-cont">
@@ -287,5 +248,65 @@
     </div>
   </div>
 </div>
+<script>
+  $(window).bind('scroll', function () {
+    if (($(window).scrollTop() > 1) && ($(window).width() > 767)) {
+        $('.navbar-nav').addClass('fixed');
+    } else {
+        $('.navbar-nav').removeClass('fixed');
+    }
+}); 
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="assets/scripts/js/masonry.js"></script>
+  <script src="assets/scripts/js/main.js"></script>
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".navbar-nav li a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top-$('.navbar-nav').height()
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();   
+    var navbarHeight = $('.navbar-nav').height();
+    $('.vivek').each(function(i) {
+      console.log(i);
+      if(i!=2){ 
+        if ($(this).position().top <= windscroll + navbarHeight) {
+          $('.navbar-nav li').removeClass('active');
+          $('.navbar-nav li').eq(i).addClass('active');
+        }else{
+          $('.navbar-nav li').eq(i).removeClass('active');
+        }
+      }
+    });
+    // if ($(this).position().top <= windscroll + navbarHeight) {
+    //   $('.navbar-nav li').removeClass('active');
+    //   $('.navbar-nav li').eq(i).addClass('active');
+    // }else{
+    //   $('.navbar-nav li').eq(i).removeClass('active');
+    // }
+});
+</script>
 </body>
 </html>

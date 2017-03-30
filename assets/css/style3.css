@@ -5,9 +5,19 @@ body,html{
   
 .banner {
   background:url("../images/page1.png") no-repeat center;
+  background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 768px;
+}
+
+.fixed{
+  padding-top: 0px;
+  position: fixed;
+  top:0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.4);
 }
 
 nav.navbar-default{
@@ -20,8 +30,9 @@ nav.navbar-default{
     width: 100%;*/
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  background:transparent;
   border:none;
+  z-index: 30;
+  background-color: transparent;
 }
 
 .navbar-nav{
@@ -136,7 +147,6 @@ hr {
 .outer{
   display: flex;
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flex;
 }
 
@@ -149,18 +159,15 @@ hr {
   font-size:12px; 
   line-height:2;
   text-align: left;
-  overflow-y: hidden;
   padding: 0 10%;
 }
 
 #right2{
   display: flex;
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  -moz-flex-direction: column;
   -ms-flex-direction: column;
   width: 41%;
   position: relative;
@@ -235,11 +242,9 @@ hr {
 #left3{
   display: flex;
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  -moz-flex-direction: column;
   -ms-flex-direction: column;
   width:38%;
   position: relative;
@@ -257,11 +262,9 @@ hr {
 #mid4{
   display: flex;
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  -moz-flex-direction: column;
   -ms-flex-direction: column;
   width: 34%;
   position: relative;
@@ -444,7 +447,7 @@ p{
   height: 25%;
 }
 
-#left4 img>nth-child(2){
+#left4 img:nth-child(2){
   position: absolute;
   top:44.5%;
   left:30%;
@@ -550,8 +553,10 @@ p{
 
 
 @media only screen and (max-width:1000px){
+
   #left2{
     width:71%;
+    height: auto;
   }
   #right2{
     width: 61%;
@@ -601,9 +606,18 @@ p{
      display: none;
   }
   .navbar-nav li{
-    border:1px solid #000;
     width: 100%;
     background-color: #ccd;
+    opacity: .8;
+    font-size: 20px;
+    padding: 30px;
+  }
+  .navbar-nav li:hover{
+    background-color: black;
+    color:white;
+  }
+  .navbar{
+    border:5px solid #000;
   }
 }
 
@@ -612,7 +626,6 @@ p{
   .outer{
     flex-direction: column;
   -webkit-flex-direction: column;
-  -moz-flex-direction: column;
   -ms-flex-direction: column;
   }
   #left2,
@@ -634,14 +647,14 @@ p{
   #btn1{
     font-size: 10px;
   }
-  .navbar-nav li:nth-child(1) a:after,
+  /*.navbar-nav li:nth-child(1) a:after,
   .navbar-nav li:nth-child(4) a:after,
   .navbar-nav li:nth-child(3) {
      display: none;
   }
   .navbar-nav li{
     width: 100%;
-  }
+  }*/
   .footer-padding{
     display: inline-block;
     text-align: center;

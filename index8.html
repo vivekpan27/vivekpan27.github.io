@@ -14,82 +14,18 @@
   <link rel="stylesheet" href="assets/css/animate.css">
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
-  <!-- <link rel="stylesheet" href="aos/dist/aos.css" />
-  <script src="aos/dist/aos.js"></script> -->
-<!-- <style type="text/css">
-
-  #page6 div div:nth-child(3)>img{
-    -webkit-animation-name: spinner;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-duration: 6s;
-
-    animation-name: spinner;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-duration: 6s;
-
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-  #page6 div div:nth-child(3)>img:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-
-  #page6 div div:nth-child(3)>img{
-    -webkit-perspective: 500px;
-    -moz-perspective: 500px;
-    -ms-perspective: 500px;
-    perspective: 500px;
-
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-   /* WebKit and Opera browsers */
-  @-webkit-keyframes spinner {
-    from { -webkit-transform: rotateZ(0deg); }
-    to   { -webkit-transform: rotateZ(-360deg); }
-  }
-
-  /* all other browsers */
-  @keyframes spinner {
-    from {
-      -moz-transform: rotateY(0deg);
-      -ms-transform: rotateY(0deg);
-      transform: rotateY(0deg);
-    }
-    to {
-      -moz-transform: rotateY(-360deg);
-      -ms-transform: rotateY(-360deg);
-      transform: rotateY(-360deg);
-    }
-  }
-
-</style> -->
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 </head>
 <body>
 
-<!-- <script>
-    AOS.init({
-      offset: 50,
-      duration: 3000
-    });
-</script> -->
 <script src="assets/scripts/js/wow.min.js"></script>
               <script>
               new WOW().init();
               </script>
 <div class="banner">
   <div class="container">
-    <nav class="navbar navbar-default  wow flipInX" data-wow-duration="2s" >
+    <nav class="navbar navbar-default wow flipInX" data-wow-duration="2s">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -149,7 +85,7 @@
         <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
         <hr>
     </div>
-    <img class="img-responsive image-w  wow wobble  " data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/page3_1.jpg">
+    <img class="img-responsive image-w  wow fadeIn" data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/page3_1.jpg">
   </div>
   <div id="right3">
     <img class="img-responsive image-hw  wow rotateIn" data-wow-duration="1.5s" data-wow-offset="1" src="assets/images/page3_2.jpg">
@@ -284,5 +220,14 @@
     </div>
   </div>
 </div>
+<script>
+  $(window).bind('scroll', function () {
+    if (($(window).scrollTop() > 1) && ($(window).width() > 767)) {
+        $('.navbar-nav').addClass('fixed');
+    } else {
+        $('.navbar-nav').removeClass('fixed');
+    }
+}); 
+</script> -->
 </body>
 </html>
