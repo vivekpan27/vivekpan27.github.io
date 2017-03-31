@@ -13,7 +13,7 @@
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="assets/css/style12.css">
+  <link rel="stylesheet" href="assets/css/style13.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
@@ -22,7 +22,6 @@
 
 
 <body >
-
 <script src="assets/scripts/js/wow.min.js"></script>
               <script>
               new WOW().init();
@@ -32,7 +31,6 @@
       <div class="navbar-header">
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png" alt="logo">
-             <span>Yebo Bicycles</span>
           </a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -221,28 +219,34 @@
   <button id="btn1" class="btn btn-lg btn-primary">DISCOVER THE SHOP</button>
 </div>
 <div id="slogan" class="text-center scrollToPlace">
-  <img class="img-responsive" src="assets/images/logo.png" alt="logo"/>
+  <img class="img-responsive hvr-bob" src="assets/images/logo.png" alt="logo"/>
   <span>Stay on the saddle!</span>
   <div class="form-group text">
     <input class="form-control input-lg" id="input-lg" type="text"  placeholder="enter your email..." />
-    <button class="btn btn-lg btn-primary" id="btn2">GO</button>
+    <button class="btn btn-lg btn-primary hvr-float-shadow" id="btn2">GO</button>
   </div>
 </div>
 <div id="footer" class="container-fluid">
   <div id="contact" class="row" >
-    <div class="col-sm-4 padding1">
-      <span id="addr_head">AOD New York</span><br/>
-      <span id="addr_body">2250 Lexington Avenue<br />
+    <div class="col-sm-4">
+      <div>
+        <span id="addr_head">AOD New York</span><br/>
+        <span id="addr_body">2250 Lexington Avenue<br />
       New York,NY 10035 - info@domain.com</span>
+      </div>
     </div>
-    <div class="col-sm-4 footer-padding">
-      <a href="https://www.twitter.com" target="_blank"><img class="img-responsive" src="assets/images/6_1.png" alt="logo"></a>
-      <a href="https://www.facebook.com" target="_blank"><img class="img-responsive" src="assets/images/6_2.png" alt="logo"></a>
-      <a href="https://www.pinterest.com" target="_blank"><img class="img-responsive" src="assets/images/6_3.png" alt="logo"></a>
+    <div class="col-sm-4">
+      <div>
+        <a href="https://www.twitter.com" target="_blank"><img class="img-responsive social-roll" src="assets/images/6_1.png" alt="logo"></a>
+        <a href="https://www.facebook.com" target="_blank"><img class="img-responsive social-roll" src="assets/images/6_2.png" alt="logo"></a>
+        <a href="https://www.pinterest.com" target="_blank"><img class="img-responsive social-roll" src="assets/images/6_3.png" alt="logo"></a>
+      </div>
     </div>
-    <div class="col-sm-4 footer-padding padding2">
-      Handcrafted by
-      <img class="img-responsive" src="assets/images/6_4.png" alt="logo">
+    <div class="col-sm-4">
+      <div>
+        Handcrafted by
+        <img class="img-responsive" src="assets/images/6_4.png" alt="logo">
+      </div>
     </div>
   </div>
 </div>
@@ -289,7 +293,7 @@ $(window).scroll(function() {
     var navbarHeight = $('.navbar-nav').height();
     $('.scrollToPlace').each(function(i) {
       if(i!=2){ 
-        if ($(this).position().top <= windscroll + navbarHeight) {
+        if ($(this).position().top <= windscroll + navbarHeight+3) {
           $('.navbar-nav li').removeClass('active');
           $('.navbar-nav li').eq(i).addClass('active');
         }else{
