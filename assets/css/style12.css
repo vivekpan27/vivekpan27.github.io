@@ -6,7 +6,7 @@ html {
     overflow-y: scroll;
 }
 .banner {
-  background:url("../images/page1.png") no-repeat center;
+  background:url("../images/page1.jpg") no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
